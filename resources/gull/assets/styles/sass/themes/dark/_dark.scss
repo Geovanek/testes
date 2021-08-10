@@ -1,0 +1,468 @@
+.dark-theme {
+    background: $dark-bg;
+
+    .sidebar-left,
+    .sidebar-left-secondary,
+    .main-header {
+        background: $foreground;
+        color: $white !important;
+    }
+    .card {
+        background: $dark-forground;
+        color: $white !important;
+        .card-header {
+            background: $dark-forground !important;
+        }
+    }
+
+    .main-content-wrap {
+        background-color: $dark-bg;
+        color: $heading !important;
+    }
+
+    .menu-toggle div {
+        background: $secondary !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .card-title,
+    .text-title {
+        color: $heading !important;
+    }
+
+    a {
+        // background: $dark-bg;
+        color: $dark-link !important;
+        &:hover {
+            color: $dark-heading !important;
+        }
+    }
+    input:focus {
+        background: $dark-link !important;
+    }
+
+    .app-footer {
+        margin-top: 2rem;
+        background: $dark-forground;
+        padding: 1.25rem;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        .footer-bottom {
+            width: 100%;
+            .logo {
+                width: 3rem;
+                height: auto;
+                margin: 4px;
+            }
+        }
+    }
+
+    //   sidebar
+
+    .navigation-left {
+        .nav-item {
+            color: $dark-link !important;
+
+            border-bottom: 1px solid $dark-forground !important;
+
+            .nav-item-hold {
+                color: $dark-link !important;
+
+                a {
+                    color: $dark-link !important;
+
+                    &:hover {
+                        background: $dark-link !important;
+                        color: $dark-link !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .sidebar-left-secondary {
+        .childNav {
+            list-style: none;
+            padding: 0;
+            // display: none;
+            li.nav-item {
+                display: block;
+                a {
+                    color: $dark-link;
+                    text-transform: capitalize;
+                    display: flex;
+                    align-items: center;
+                    font-size: 13px;
+                    cursor: pointer;
+                    padding: 12px 24px;
+                    transition: 0.15s all ease-in;
+
+                    &:hover {
+                        background: $dark-link;
+                        color: $dark-text !important;
+                        .nav-icon {
+                            color: $dark-text !important;
+                        }
+                    }
+                    &.open {
+                        color: $dark-text;
+                        background: $dark-link;
+                        a {
+                            background: $dark-link;
+                        }
+                    }
+                    &.router-link-active {
+                        color: $dark-text;
+                        .nav-icon {
+                            color: $dark-text;
+                        }
+                    }
+
+                    .nav-icon {
+                        font-size: 18px;
+                        margin-right: 8px;
+                        vertical-align: middle;
+                        color: $dark-heading;
+                    }
+                    .item-name {
+                        vertical-align: middle;
+                        font-weight: 400;
+                    }
+                    .dd-arrow {
+                        margin-left: auto;
+                        font-size: 11px;
+                        transition: all 0.3s ease-in;
+                    }
+                }
+                // &.open {
+                //     a {
+                //         background: $dark-forground;
+                //     }
+                // }
+            }
+        }
+    }
+
+    //   search
+
+    .search-ui {
+        position: fixed;
+        background: $dark-heading;
+
+        input.search-input {
+            background: $dark-heading;
+            &::placeholder {
+                color: $dark-heading;
+            }
+        }
+    }
+    //   header search
+    .search-bar {
+        background: $gray-400 !important;
+        //border: 1px solid $dark-forground !important;
+
+        input {
+            color: $dark-heading !important;
+            //background: $dark-heading !important;
+        }
+        .search-icon {
+            font-size: 18px;
+            width: 24px;
+            display: inline-block;
+        }
+    }
+    //   utilites
+    .border-top {
+        border-top: 1px solid $dark-forground !important;
+    }
+    // tab
+    .tab-border {
+        border: 1px dashed $dark-forground !important;
+        margin: 30px 0 !important;
+    }
+
+    //   table
+    table.vgt-table {
+        background: $dark-bg;
+    }
+    table.tableOne.vgt-table thead tr th {
+        background: $dark-bg;
+        border-color: $dark-forground;
+    }
+    //   list
+    .list-group-item {
+        background-color: $dark-bg;
+        border: 1px solid $dark-forground;
+    }
+    //   pagination
+
+    .page-link {
+        color: $dark-heading;
+        background-color: $dark-forground;
+        border: 1px solid $dark-bg;
+    }
+
+    //   header dropdoen
+    .dropdown-menu {
+        color: $gray-800;
+        background-color: $dark-forground;
+        border: 1px solid $dark-forground;
+    }
+
+    // table
+    .table {
+        td {
+            border-top: 1px solid $dark-forground;
+        }
+        thead {
+            background: $dark;
+            th {
+                border-bottom: 2px solid $primary;
+            }
+        }
+        .thead-light {
+            th {
+                color: $dark-heading;
+                background-color: $dark-forground;
+                border-color: $dark-forground;
+            }
+        }
+    }
+
+    .apexcharts-xaxis-label {
+        fill: $dark-heading;
+    }
+    .apexcharts-yaxis-label {
+        fill: $dark-heading;
+    }
+
+    .apexcharts-tooltip.light {
+        border: 1px solid $dark-bg;
+        background: $dark-forground;
+    }
+
+    .apexcharts-tooltip.light .apexcharts-tooltip-title {
+        background: $dark-bg;
+        border-bottom: 1px solid $dark-bg;
+    }
+
+    .apexcharts-legend-text {
+        color: $dark-heading !important;
+    }
+
+    // input group
+    .input-group-text {
+        color: $white;
+        background-color: $dark-bg;
+        border: 1px solid $gray-400;
+    }
+
+    .custom-select {
+        color: $white;
+        background-color: $dark-bg;
+        border: 1px solid $gray-400;
+    }
+
+    .custom-separator {
+        border: 1px solid $gray-400;
+    }
+
+    .ul-form__text {
+        color: $gray-600 !important;
+    }
+
+    .header-icon:hover {
+        background: $dark-forground !important;
+    }
+
+    // calender
+    .calendar-parent {
+        background-color: $dark-bg;
+    }
+    .cv-day,
+    .cv-event,
+    .cv-header-day,
+    .cv-header-days,
+    .cv-week,
+    .cv-weeks {
+        border-style: solid;
+        border-color: $dark-forground;
+    }
+    .theme-default {
+        .cv-day.outsideOfMonth,
+        .cv-day.past {
+            background-color: $dark-bg;
+        }
+        .cv-day.today {
+            background-color: $dark-forground;
+        }
+        .cv-header,
+        .cv-header-day {
+            background-color: $dark-forground;
+        }
+    }
+    .cv-header,
+    .cv-header button {
+        border-style: solid;
+        border-color: $dark-bg;
+        background: $dark-forground;
+    }
+
+    // vg-table
+    .vgt-global-search.vgt-clearfix {
+        background: $dark-bg;
+    }
+    table.tableOne tbody tr th.line-numbers {
+        background: $dark-bg;
+    }
+
+    div.vgt-wrap__footer.vgt-clearfix {
+        background: $dark-bg;
+    }
+
+    table.vgt-table td {
+        border-bottom: 1px solid $dark-forground;
+        color: $dark-heading;
+    }
+    table.tableOne tbody tr th.vgt-checkbox-col {
+        background: $dark-bg;
+    }
+
+    th.line-numbers {
+        border-bottom: 1px solid $dark-bg;
+    }
+
+    th.vgt-checkbox-col {
+        border-bottom: 1px solid $dark-bg;
+    }
+    .ul-widget__item {
+        border-bottom: 0.07rem dashed $dark-forground;
+    }
+
+    .page-item.disabled .page-link {
+        background-color: $dark-bg;
+        border-color: $dark-bg;
+    }
+    ul.gull-pagination li .page-link {
+        border-color: $dark-bg !important;
+        &:hover {
+            background: $dark-bg;
+        }
+    }
+
+    // Vertical sidebar Layout
+
+    .layout-sidebar-vertical {
+        .sidebar-panel {
+            box-shadow: 0 1px 15px $dark-forground, 0 1px 6px $dark-forground;
+            background: $dark-bg;
+        }
+        .main-content-wrap {
+            .main-header {
+                background: $dark-bg !important;
+            }
+        }
+    }
+
+    .layout-sidebar-large {
+        .main-header {
+            .search-bar {
+                border: none !important;
+            }
+        }
+    }
+
+    .layout-horizontal-bar {
+        .header-topnav {
+            background: $dark-bg;
+            box-shadow: 0 1px 15px transparent, 0 1px 6px transparent;
+            .topnav a {
+                color: $dark-heading !important;
+            }
+            .topnav ul ul {
+                background: $dark-bg;
+                color: $dark-heading;
+            }
+            .topnav ul li ul li:hover {
+                background: $dark-forground;
+            }
+        }
+    }
+    .main-header {
+        .show {
+            .header-icon {
+                background: $dark-link;
+            }
+        }
+        .notification-dropdown {
+            color: $dark-text;
+            .dropdown-item {
+                border-bottom: 1px solid $dark-bg;
+                color: $dark-heading;
+            }
+            .notification-icon {
+                background: $dark-bg !important;
+            }
+        }
+    }
+
+    .dropdown-item:focus,
+    .dropdown-item:hover {
+        color: $dark-text !important;
+        text-decoration: none;
+        background-color: $dark-bg;
+    }
+
+    .dropdown-menu .menu-icon-grid {
+        a {
+            color: $gray-700 !important;
+            text-decoration: none;
+            &:hover {
+                color: $dark-text !important;
+            }
+        }
+    }
+
+    .form-control {
+        color: $white !important;
+    }
+
+    input.form-control:focus {
+        background: $dark-link !important;
+    }
+
+    .form-group {
+        label {
+            color: $azure !important;
+        }
+    }
+
+    .badge-primary,
+    .badge-secondary,
+    .badge-danger,
+    .badge-darck {
+        color: $heading;
+    }
+
+    .badge-success,
+    .badge-warning,
+    .badge-info,
+    .badge-light {
+        color: $dark-bg;
+    }
+
+    .tooltip-inner {
+        color: $light;
+        background-color: $dark;
+    }
+
+    .modal-content {
+        background: $dark-forground !important;
+    }
+
+}

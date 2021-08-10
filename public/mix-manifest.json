@@ -1,0 +1,11 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/smart.wizard.js": "/js/smart.wizard.js",
+    "/js/sweetAlert.js": "/js/sweetAlert.js",
+    "/gull/assets/js/script.js": "/gull/assets/js/script.js",
+    "/js/livewireToastr.js": "/js/livewireToastr.js",
+    "/js/livewireSweetAlert.js": "/js/livewireSweetAlert.js",
+    "/css/app.css": "/css/app.css",
+    "/gull/assets/styles/css/themes/dark-turquoise.min.css": "/gull/assets/styles/css/themes/dark-turquoise.min.css",
+    "/gull/assets/js/common-bundle-script.js": "/gull/assets/js/common-bundle-script.js"
+}

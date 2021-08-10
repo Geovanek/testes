@@ -1,0 +1,131 @@
+@import "../variables";
+@import "colors";
+
+$blue: map-get($solid-colors, "blue") !default;
+$midnight-blue: map-get($solid-colors, "midnight-blue") !default;
+$indigo: map-get($solid-colors, "indigo") !default;
+$dark-purple: map-get($solid-colors, "dark-purple") !default;
+$purple: map-get($solid-colors, "purple") !default;
+$pink: map-get($solid-colors, "pink") !default;
+$red: map-get($solid-colors, "red") !default;
+$orange: map-get($solid-colors, "orange") !default;
+$yellow: map-get($solid-colors, "yellow") !default;
+$green: map-get($solid-colors, "green") !default;
+$teal: map-get($solid-colors, "teal") !default;
+$cyan: map-get($solid-colors, "cyan") !default;
+$gray: map-get($solid-colors, "gray") !default;
+$gray-dark: map-get($solid-colors, "gray-dark") !default;
+
+$raisin-black: map-get($dark-turquoise-colors, "raisin-black") !default;
+$charleston-green: map-get($dark-turquoise-colors, "charleston-green") !default;
+$gunmetal: map-get($dark-turquoise-colors, "gunmetal") !default;
+$charcoal: map-get($dark-turquoise-colors, "charcoal") !default;
+$sonic-silver: map-get($dark-turquoise-colors, "sonic-silver") !default;
+$spanish-gray: map-get($dark-turquoise-colors, "spanish-gray") !default;
+$silver-sand: map-get($dark-turquoise-colors, "silver-sand") !default;
+$light-gray: map-get($dark-turquoise-colors, "light-gray") !default;
+$gainsboro: map-get($dark-turquoise-colors, "gainsboro") !default;
+$persian-green: map-get($dark-turquoise-colors, "persian-green") !default;
+$keppel: map-get($dark-turquoise-colors, "keppel") !default;
+$turquoise: map-get($dark-turquoise-colors, "turquoise") !default;
+$middle-blue-green: map-get($dark-turquoise-colors, "middle-blue-green") !default;
+$light-cyan: map-get($dark-turquoise-colors, "light-cyan") !default;
+$azure: map-get($dark-turquoise-colors, "azure") !default;
+
+$primary-base: $persian-green !default;
+
+$white: $light-gray !default;
+$gray-100: $raisin-black !default; //darken(desaturate($primary-base, 40), 20) !default;
+$gray-200: $charleston-green !default;
+$gray-300: $gunmetal !default;
+$gray-400: $charcoal !default;
+$gray-500: $sonic-silver !default; //lighten(desaturate($primary-base, 40), 40) !default;
+$gray-600: $spanish-gray !default;
+$gray-700: $silver-sand !default;
+$gray-800: $light-gray !default;
+$gray-900: $gainsboro !default;
+$black: lighten($primary-base, 60%) !default;
+
+$primary: $primary-base !default;
+$secondary: $sonic-silver !default; //spanish-gray ??
+$success: $green !default;
+$info: $blue !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $light-cyan !default;
+$dark: $gunmetal !default;
+
+$background: $white !default;
+$foreground: $gunmetal !default; //map-get($dark-turquoise-colors, "gunmetal") !default;
+$heading: $gainsboro !default;
+
+$dark-bg: map-get($dark-turquoise-colors, "raisin-black") !default;
+$dark-forground: map-get($dark-turquoise-colors, "charleston-green") !default;
+$dark-heading: map-get($dark-turquoise-colors, "keppel") !default;
+$dark-link: map-get($dark-turquoise-colors, "persian-green") !default;
+$dark-text: map-get($dark-turquoise-colors, "light-cyan") !default;
+
+$colors: (
+    "blue": $blue,
+    "midnight-blue": $midnight-blue,
+    "indigo": $indigo,
+    "dark-purple": $dark-purple,
+    "purple": $purple,
+    "pink": $pink,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "teal": $teal,
+    "cyan": $cyan,
+    "white": $white,
+    "gray": $gray,
+    "gray-dark": $gray-dark,
+    "raisin-black": $raisin-black,
+    "charleston-green": $charleston-green,
+    "gunmetal": $gunmetal,
+    "charcoal": $charcoal,
+    "sonic-silver": $sonic-silver,
+    "spanish-gray": $spanish-gray,
+    "silver-sand": $silver-sand,
+    "light-gray": $light-gray,
+    "gainsboro": $gainsboro,
+    "persian-green": $persian-green,
+    "keppel": $keppel,
+    "turquoise": $turquoise,
+    "middle-blue-green": $middle-blue-green,
+    "light-cyan": $light-cyan,
+    "azure": $azure,
+) !default;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "gray-100": $gray-100,
+    "gray-200": $gray-200,
+    "gray-300": $gray-300,
+    "gray-400": $gray-400,
+    "gray-500": $gray-500,
+    "gray-600": $gray-600,
+    "gray-700": $gray-700,
+    "gray-800": $gray-800,
+    "gray-900": $gray-900,
+    "dark": $dark
+) !default;
+
+// @import "../../../fonts/iconsmind/iconsmind.css";
+// @import "../../vendor/bootstrap/bootstrap.scss";
+@import '~bootstrap/scss/bootstrap';
+@import "../bootstrap-rtl.scss";
+@import "../globals/globals";
+
+/*
+// dark theme 
+*/
+
+@import "dark/dark";
