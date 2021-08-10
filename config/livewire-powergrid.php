@@ -10,7 +10,7 @@ return [
     | You will be able to know which theme pattern will be loaded
     |
     */
-    'theme' => 'bootstrap',
+    'theme' => \PowerComponents\LivewirePowerGrid\Themes\bootstrap5::class,
 
     /*
     |--------------------------------------------------------------------------
